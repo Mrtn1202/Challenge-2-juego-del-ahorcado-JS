@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Martin iturri">
+    <meta name="robots" content="index">
+    <link rel="icon" href="Fotos/Vector.png">
+    <link href="http://fonts.cdnfonts.com/css/8bit-wonder" rel="stylesheet">
+    <title>Ahorcado alura</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Juego del Ahorcado</h1>
+        <img class="logo" src="fotos/Vector.png" alt="logo alura">
+    </header>
+
+    <main class="contenedor-principal">
+        <div class="contenedor-iniciar">
+            <div class="botones-inicio">
+                <button id="boton-iniciar" onclick="startGame()">Iniciar Juego</button>
+                <button id="boton-agregar">Agregar Palabra</button>
+            </div>
+        </div>
+        <div class="contenedor-juego">
+            <div class="canvas-juego">
+                <canvas id="canvas" width="1200" height="600">
+                    <div class="letras-guiones">
+                        <div class="letrasusadas"></div>
+                        <div class="guiones"></div>
+                    </div>
+                </canvas>
+            </div>
+            <div class="botones-canvas">
+                <button id="boton-nuevo" onclick="startGame()">Nuevo Juego</button>
+                <button id="boton-rendirse" onclick="surrender()">Rendirse</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        codeado por <a href="https://github.com/Mrtn1202" target="_blank">Martin iturri</a>
+        <a href="https://github.com/Mrtn1202" target="_blank"><img src="fotos/github.png"></a> 
+        <a href="https://www.linkedin.com/in/martin-iturri-dw/" target="_blank"><img src="fotos/linkedin.png"></a>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
